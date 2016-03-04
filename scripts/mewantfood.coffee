@@ -58,7 +58,7 @@ get_food_trucks = (msg) ->
                 ProcessExternalResources : false
                 MutationEvents : false
                 QuerySelector : false
-            ).createWindow()
+            )
 
             trucks = "Here are the food trucks near us today: \n"
             mapAreas = ['NoMa', 'CNN', 'Union Station']
