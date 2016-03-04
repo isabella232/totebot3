@@ -59,6 +59,7 @@ get_food_trucks = (msg) ->
                 MutationEvents : false
                 QuerySelector : false
             )
+            console.log(window)
 
             trucks = "Here are the food trucks near us today: \n"
             mapAreas = ['NoMa', 'CNN', 'Union Station']
