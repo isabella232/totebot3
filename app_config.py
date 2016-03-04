@@ -8,9 +8,9 @@ They will be exposed to users. Use environment variables instead.
 """
 import os
 
-PROJECT_NAME = 'Totebot2'
-PROJECT_SLUG = 'totebot2'
-REPOSITORY_NAME = 'totebot2'
+PROJECT_NAME = 'Totebot3'
+PROJECT_SLUG = 'totebot3'
+REPOSITORY_NAME = 'totebot3'
 CONFIG_NAME = PROJECT_SLUG.upper()
 
 # PRODUCTION_S3_BUCKETS = ['apps.npr.org', 'apps2.npr.org']
@@ -25,9 +25,7 @@ def get_secrets():
     A method for accessing our secrets.
     """
     secrets = [
-        '%s_HUBOT_HIPCHAT_JID' % CONFIG_NAME,
-        '%s_HUBOT_HIPCHAT_PASSWORD' % CONFIG_NAME,
-        '%s_HUBOT_HIPCHAT_ROOMS' % CONFIG_NAME,
+        'HUBOT_SLACK_TOKEN',
         '%s_HUBOT_GOOGLE_CALENDAR_CLIENT_ID' % CONFIG_NAME,
         '%s_HUBOT_GOOGLE_CALENDAR_CLIENT_SECRET' % CONFIG_NAME,
         '%s_HUBOT_GOOGLE_CALENDAR_REFRESH_TOKEN' % CONFIG_NAME,
