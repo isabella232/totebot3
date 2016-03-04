@@ -10,10 +10,10 @@ import app_config
 """
 Base configuration
 """
-env.project_name = 'totebot2'
-env.deployed_name = 'totebot2'
+env.project_name = 'totebot3'
+env.deployed_name = 'totebot3'
 env.deploy_to_servers = False
-env.repo_url = 'git://github.com/nprapps/totebot2.git'
+env.repo_url = 'git://github.com/nprapps/totebot3.git'
 env.alt_repo_url = None
 env.user = 'ubuntu'
 env.python = 'python2.7'
