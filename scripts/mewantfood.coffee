@@ -52,6 +52,7 @@ get_food_trucks = (msg) ->
         if err
             msg.send 'I can\'t find a menu for today.'
         else
+            console.log(body)
             window = (jsdom body, null,
               features :
                 FetchExternalResources : false
