@@ -94,7 +94,7 @@ module.exports = (robot) ->
       callback(googleClient)
     else
       return if missingEnvironmentForApi(msg)
-      googleapis.calendar('v3').execute (err, client) ->
+      googleapis.discover('calendar', 'v3').execute (err, client) ->
         if err
           msg.send "I'm sorry. I wasn't able to communicate with Google right now :("
         else
