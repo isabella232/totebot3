@@ -173,7 +173,7 @@ Deployment
 """
 def restart_init():
     require('settings', provided_by=[utils])
-    sudo('service totebot2 restart')
+    sudo('service totebot3 restart')
 
 
 def deploy(remote='origin'):

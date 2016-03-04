@@ -26,8 +26,8 @@
 #   application on the on the Google APIs Console:
 #   <https://code.google.com/apis/console>. Click "API and Auth" followed by
 #   "API" turn on the "Calendar API". Then click "Register App" to create a new
-#    one. Also be sure to select your email address or the heroku app can't authenticate 
-#    against it. 
+#    one. Also be sure to select your email address or the heroku app can't authenticate
+#    against it.
 #
 #   HUBOT_GOOGLE_CALENDAR_REFRESH_TOKEN is an OAuth2 refresh token with
 #   authorization to create events on your user's calendar. An easy way to get
@@ -94,7 +94,7 @@ module.exports = (robot) ->
       callback(googleClient)
     else
       return if missingEnvironmentForApi(msg)
-      googleapis.discover('calendar', 'v3').execute (err, client) ->
+      googleapis.calendar('v3').execute (err, client) ->
         if err
           msg.send "I'm sorry. I wasn't able to communicate with Google right now :("
         else
