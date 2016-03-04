@@ -62,7 +62,7 @@ get_food_trucks = (msg) ->
 
             trucks = "Here are the food trucks near us today: \n"
             mapAreas = ['NoMa', 'CNN', 'Union Station']
-            $ = require('jquery').create(window)
+            $ = require('jquery')
 
             for area in mapAreas
               selector = "h2:contains(" + area + ")"
