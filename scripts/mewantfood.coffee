@@ -78,12 +78,11 @@ scrape = (err, window) ->
           trucks += $(element).find('span').text() + '\n'
 
     trucks += '\nhttp://foodtruckfiesta.com/apps/maplarge.html'
-    console.log(trucks)
 
     exports.msg.send trucks
 
 module.exports = (robot) ->
-    robot.respond /me want food|menu me|what's for lunch|lunch/i, (msg) ->
+    robot.respond /me want food|menu me|what(.)s for lunch|lunch/i, (msg) ->
       get_soundbites_menu(msg)
       get_food_trucks(msg)
 
