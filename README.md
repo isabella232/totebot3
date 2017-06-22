@@ -212,3 +212,11 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
 You may want to get comfortable with `heroku logs` and `heroku restart` if
 you're having issues.
+
+For NPR's installation, run:
+
+```
+fab utils restart_init
+```
+
+Your SSH keys will need to be installed on the server.
