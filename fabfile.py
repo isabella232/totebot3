@@ -30,7 +30,7 @@ Environments
 def utils():
     env.settings = 'utils'
     env.s3_buckets = ['apps.npr.org', 'apps2.npr.org']
-    env.hosts = ['54.244.243.254']
+    env.hosts = ['52.89.61.87']
 
 
 """
